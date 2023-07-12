@@ -1,4 +1,10 @@
 # Birth_Rate
+
+Introduction:
+I wanted to take a look if education level played a part when women were having babies.  According to the CDC, in 2021, the birth rates for women in their early 20s declined and increased mostly in a woman's early 30s.  
+
+The dataset that I am analyzing is the US births from 2016-2021 according to education level and age by state.  The purpose of this project is to provide a look into the value of education, bringing stability and marketability, over starting a family early or vice versa.
+
 Increase? Decrease? Birth rate dataset 
 
 
