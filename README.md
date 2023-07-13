@@ -24,4 +24,3 @@ I created functions to clean the dataset, I removed columns that I didn't need, 
 ![Alt Text](Birth_Rate/img/California Education of Mother.png)
 
 Conclusion:
-
