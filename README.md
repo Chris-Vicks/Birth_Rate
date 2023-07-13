@@ -11,7 +11,7 @@ I used a dataset from Kaggle that provided me with the necessary data points tha
 
 # Data Inquiry:
 
-According to the dataset, one of the questions I asked myself was; At the highest levels of education are the birth rates increasing? and for anecdotal inquiry at what age are they having babies?  The age is a summarized field as the average age of mother, though I used it as a snapshot it was not my major hypothesis.  I was looking for the trend in the US birth rate, the relationship between education level and birth rate, and whether people are deciding to have babies later in life based on education level.
+According to the dataset, one of the questions I asked myself was; At the highest levels of education are the birth rates increasing? and for anecdotal inquiry at what age are they having babies?  The age is a summarized field as the average age of the mother, though I used it as a snapshot it was not my major hypothesis.  I was looking for the trend in the US birth rate, the relationship between education level and birth rate, and whether people are deciding to have babies later in life based on education level.
 
 # Project Value:
 
@@ -19,27 +19,7 @@ This project has value in the sense that it can help project the trend of the US
 
 # Data Cleaning and Analysis:
 
+I created functions to clean the dataset, I removed columns that I didn't need, state abbreviations, gender (of the baby), and baby weight.  I will insert graphs, visualizations, and data here.
 
-Increase? Decrease? Birth rate dataset 
+Conclusion:
 
-
-
-
-
-
-
-
-
-Describe the fields
-There are three categories the dataset is broken into; State, Year,	Gender,	
-There are four quantitative fields; Education, Level of Mother,	Education Level Code,	Number of Births,	Average Age of Mother (years),	and Average Birth Weight (g).
-There are no NAN values in  the dataset
-The data has two summarized categories; avg age of the mother and average birth weight but these two fields will not be used for my analysis.
-
-Potential avenues of inquiry
-Is the birth rate in the US decreasing?
-Among what level of education are people having fewer or more babies?
-Is there a correlation between education level and having babies?
-
-Value proposition
-Understanding the direction of the US population.  Are people deciding to have babies later in life and at what education level?
