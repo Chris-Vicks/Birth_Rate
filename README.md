@@ -7,7 +7,7 @@ The dataset that I am analyzing is the US births from 2016-2021 according to edu
 
 # Data Description
 
-I used a dataset from Kaggle that provided me with the necessary data points that I needed for the project.  The data set was broken down into fields; State,	State Abbreviation,	Year,	Gender,	Education Level of Mother,	Education Level Code,	Number of Births,	Average Age of Mother (years), and	Average Birth Weight (g). This dataset has four quantitative fields: Education Level of Mother, Education Level Code, Number of Births, and Average Age of Mother (years).  The summarized category Average Birth Weight, will not be used for analysis.  There were no NAN values within the dataset. 
+I used a dataset from Kaggle that provided me with the necessary data points that I needed for the project.  The data set was broken down into fields; State,	State Abbreviation,	Year,	Gender,	Education Level of Mother,	Education Level Code,	Number of Births,	Average Age of Mother (years), and	Average Birth Weight (g). This dataset has 4 quantitative fields: Education Level Code, Number of Births, and Average Age of Mother (years), the average weight of the baby.  The summarized category Average Birth Weight, will not be used for analysis.  There were no NAN values within the dataset. 
 
 # Data Inquiry:
 
