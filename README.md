@@ -21,6 +21,8 @@ This project has value in the sense that it can help project the trend of the US
 
 I created functions to clean the dataset, I removed columns that I didn't need, state abbreviations, gender (of the baby), and baby weight.  I will insert graphs, visualizations, and data here.
 
-![](../img/California Education of Mother.png)
+![North Carolina Education of Mother](https://github.com/Chris-Vicks/Birth_Rate/assets/135290086/a1280783-87b7-46db-b7ee-bd630de0dcc6)
 
+
+![North Carolina Average Age of Mother](https://github.com/Chris-Vicks/Birth_Rate/assets/135290086/f15799d5-a475-402a-a5ac-a8f55c261ad3)
 Conclusion:
