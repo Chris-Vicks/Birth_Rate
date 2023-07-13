@@ -21,7 +21,7 @@ This project has value in the sense that it can help project the trend of the US
 
 I created functions to clean the dataset, I removed columns that I didn't need, state abbreviations, gender (of the baby), and baby weight.  I will insert graphs, visualizations, and data here.
 
-![](img/California Education of Mother.png)
+![](../img/California Education of Mother.png)
 
 Conclusion:
 
