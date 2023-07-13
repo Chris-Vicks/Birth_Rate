@@ -22,6 +22,15 @@ class US_Births:
         state_data = self.data[self.data['State'] == state]
         summed_data = state_data.groupby(['State', 'Year'])['Number of Births'].sum().reset_index()
         return summed_data
+    
+    def sum_education_level(self, state):
+        education_data = self.data[self.data['State'] == state]
+        summed_education_data = education_data.groupby(['State', 'Year', 'Education Level of Mother'])['Number of Births'].sum().reset_index()
+        return summed_education_data
+    
+    def sum_all_state(self):
+        summed_all_state_data = self.data.groupby(['Year', 'Education Level of Mother'])['Number of Births'].sum().reset_index()
+        return summed_all_state_data
 
 #Returns the current data.       
     def get_data(self):
@@ -67,6 +76,10 @@ if __name__ == "__main__":
     combined_data.to_csv('Data/Avg_Mothers_Birth.csv', index=False)
     print("Cleaned data saved as 'Avg_Mothers_Birth.csv'.")
 
+    summed_all_state_data = data_processor.sum_all_state()
+    summed_all_state_data.to_csv('../Data/Sum_all_states.csv', index=False)
+    print("Cleaned data saved as 'Summed All State'.")
+
      # Call the sum_births_by_year function to calculate the summed data by year and state
     for state in states:
         result_summed_data = data_processor.sum_births_by_year(state)
@@ -74,3 +87,8 @@ if __name__ == "__main__":
         # Save the summed data by year and state as "Summed.csv"
         result_summed_data.to_csv(f'../Data/Summed_{state}.csv', index=False)
         print(f"Summed data for {state} saved as 'Summed_{state}.csv'.")
+
+    for state in states:
+        result_summed_education_data = data_processor.sum_education_level(state)
+        result_summed_education_data.to_csv(f'../Data/Summed_Education_Level_{state}.csv', index=False)
+        print(f"Summed Education Level data for {state} saved as 'Summed_Education_Level_{state}.csv'.")
