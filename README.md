@@ -50,6 +50,7 @@ The birth rates for women in their early 20s have declined, while rates have inc
 There is a notable relationship between education level and birth rate, with higher levels of education associated with delayed childbearing.
 Pursuing higher education brings stability and marketability, potentially influencing the decision to start a family later in life.
 Understanding the correlation between education level and birth rate provides valuable insights into population trends and reproductive choices.
+
 Future Work:
 In future research, it would be interesting to delve deeper into the factors influencing the decline in birth rates among women in their early 20s and the increase among women in their early 30s. Additionally, investigating the impact of socioeconomic factors and career aspirations on the decision to delay childbearing could provide further insights. Furthermore, exploring the relationship between education level, birth rate, and its implications for healthcare systems and policy development would be valuable.
 
