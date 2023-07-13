@@ -1,5 +1,7 @@
 import pandas as pd
 
+states = ['California', 'Illinois', 'North Carolina', 'Oklahoma', 'Texas']
+
 class US_Births:
     def __init__(self, file_path):
         self.file_path = file_path
@@ -15,6 +17,11 @@ class US_Births:
     def remove_columns(self, columns):
         self.data.drop(columns=columns, inplace=True)
         print("Columns successfully removed.")
+
+    def sum_births_by_year(self, state):
+        state_data = self.data[self.data['State'] == state]
+        summed_data = state_data.groupby(['State', 'Year'])['Number of Births'].sum().reset_index()
+        return summed_data
 
 #Returns the current data.       
     def get_data(self):
@@ -59,3 +66,11 @@ if __name__ == "__main__":
     combined_data = data_processor.sort_data()
     combined_data.to_csv('Data/Avg_Mothers_Birth.csv', index=False)
     print("Cleaned data saved as 'Avg_Mothers_Birth.csv'.")
+
+     # Call the sum_births_by_year function to calculate the summed data by year and state
+    for state in states:
+        result_summed_data = data_processor.sum_births_by_year(state)
+
+        # Save the summed data by year and state as "Summed.csv"
+        result_summed_data.to_csv(f'../Data/Summed_{state}.csv', index=False)
+        print(f"Summed data for {state} saved as 'Summed_{state}.csv'.")
