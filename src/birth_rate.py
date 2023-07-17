@@ -1,11 +1,17 @@
 import pandas as pd
 
+# List of states for data processing
 states = ['California', 'Illinois', 'North Carolina', 'Oklahoma', 'Texas']
 
 class US_Births:
     def __init__(self, file_path):
         self.file_path = file_path
         self.data = None
+        """Initialize the US_Births class.
+
+        Parameters:
+            file_path (str): Path to the CSV file containing birth data.
+        """
 
 #Reads the CSV file and loads the data into the object.        
     def read_csv(self):
@@ -19,6 +25,11 @@ class US_Births:
         print("Columns successfully removed.")
 
     def sum_births_by_year(self, state):
+        """Summarizes the number of births by year for a specific state.
+
+        Returns:
+            pandas.DataFrame: DataFrame containing the summed data.
+        """
         state_data = self.data[self.data['State'] == state]
         summed_data = state_data.groupby(['State', 'Year'])['Number of Births'].sum().reset_index()
         return summed_data
@@ -69,7 +80,7 @@ if __name__ == "__main__":
     cleaned_data.to_csv('Data/Cleaned_Births.csv', index=False)
     print("Cleaned data saved as 'Cleaned_Births.csv'.")
 
-    keyword = 'keyword'  # Replace 'keyword' with your desired keyword
+    keyword = 'keyword'  # Replace 'keyword' desired keyword
     data_processor.state_keyword_query(keyword)
 
     combined_data = data_processor.sort_data()
